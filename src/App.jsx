@@ -8,11 +8,11 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
+      <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false} infiniteLoop={false}>
         <div>
           <img src="/cover1152x540.webp" />
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 p-2">
-            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11" onClick={() => { console.log("Here") }}>
+            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11 font-semibold" onClick={() => { console.log("Here") }}>
               <p className="w-[200px]">Explore Fall Collection</p>
             </button>
           </div>
@@ -20,7 +20,7 @@ const App = () => {
         <div>
           <img src="/storySZN960x450.webp" />
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 p-2">
-            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11" onClick={() => { console.log("Here") }}>
+            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11 font-semibold" onClick={() => { console.log("Here") }}>
               <p className="w-60">Explore Story SZN Collection</p>
             </button>
           </div>
@@ -28,7 +28,7 @@ const App = () => {
         <div>
           <img src="/cover1152x540.webp" />
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 p-2">
-            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11" onClick={() => { console.log("Here") }}>
+            <button className="bg-[#cdaf8c] ease-in-out delay-150 duration-150 hover:bg-black hover:text-[#cdaf8c] rounded-lg h-11 font-semibold" onClick={() => { console.log("Here") }}>
               <p className="w-[200px]">Explore Fall Collection</p>
             </button>
           </div>
