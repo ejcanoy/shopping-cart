@@ -15,7 +15,7 @@ function Navbar() {
                         <Link className="w-[50px]" to="/shop">SHOP</Link>
                     </li>
                 </ul>
-                <div className="min-w-[290px] min-h-[130px] flex justify-center items-center pr-5">
+                <div className="min-w-[290px] min-h-[130px] flex justify-center items-center">
                     <button>
                         <ShoppingCart />
                     </button>
