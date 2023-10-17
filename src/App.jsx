@@ -36,8 +36,8 @@ const App = () => {
       </Carousel>
 
       <div className="w-full h-4 bg-black"></div>
-      <div className="flex w-full justify-center">
-        <h2 className="text-3xl">NEWEST DROP!</h2>
+      <div className="flex w-full justify-center bg-[#cdaf8c]">
+        <h2 className="text-5xl 2xl:text-6xl bg-white">NEWEST DROP!</h2>
       </div>
       <div className="w-full h-4 bg-black"></div>
       <Drop />
