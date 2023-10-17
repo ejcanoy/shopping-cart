@@ -12,7 +12,44 @@ function fillData() {
     return ret;
 }
 
-const newestDrop = fillData();
+const newestDrop = [
+    {
+        imgSrc: "/okk1.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+    {
+        imgSrc: "/okk2.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+    {
+        imgSrc: "/okkhoodie.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+    {
+        imgSrc: "/ash1.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+    {
+        imgSrc: "/aso.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+    {
+        imgSrc: "/dinosnore1.webp",
+        newArrival: true,
+        name: "Fat Napz Society Ok Karen Black",
+        price: 24.99
+    },
+];
 
 
 
