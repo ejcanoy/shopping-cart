@@ -1,7 +1,7 @@
 function Card({ imgSrc, name, price, newArrival }) {
     return (
         <>
-            <div>
+            <div className="transition-transform transform hover:scale-105">
                 <div className=""><img className="h-auto w-full object-cover" src={imgSrc} alt="" /></div>
                 <div>
                     {

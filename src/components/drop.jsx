@@ -4,11 +4,11 @@ import Card from "./productCard";
 function Drop() {
     return (
         <>
-            <div className="flex w-full justify-center">
-                <div className="flex flex-wrap px-40 gap-10 justify-between">
+            <div className="w-[80%] my-10 mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-center">
                     {
                         newestDrop.map((product) => (
-                            <Card key={product.name} imgSrc={product.imgSrc} name={product.name} price={product.price} newArrival={product.newArrival}/>
+                            <Card key={product.name} imgSrc={product.imgSrc} name={product.name} price={product.price} newArrival={product.newArrival} />
                         ))
                     }
                 </div>
