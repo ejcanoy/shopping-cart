@@ -14,6 +14,7 @@ function Navbar() {
                     onClick={() => setIsAboutDropdownOpen(false)}
                 ></div>
             )}
+            <div className="bg-black w-full h-7"></div>
             <nav className="sticky z-50 top-0 bg-white drop-shadow-lg">
                 <div className="w-[80%] mx-auto flex items-center">
                     <div className="min-w-[100px] h-[50px]">
