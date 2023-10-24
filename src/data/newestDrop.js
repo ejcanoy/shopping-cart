@@ -22,31 +22,31 @@ const newestDrop = [
     {
         imgSrc: "/okk2.webp",
         newArrival: true,
-        name: "Fat Napz Society Ok Karen Black",
+        name: "Fat Napz Society Ok Karen Black 1",
         price: 24.99
     },
     {
         imgSrc: "/okkhoodie.webp",
         newArrival: true,
-        name: "Fat Napz Society Ok Karen Black",
+        name: "Fat Napz Society Ok Karen Black 2",
         price: 24.99
     },
     {
         imgSrc: "/ash1.webp",
         newArrival: true,
-        name: "Fat Napz Society Ok Karen Black",
+        name: "Fat Napz Society Ok Karen Black 3",
         price: 24.99
     },
     {
         imgSrc: "/aso.webp",
         newArrival: true,
-        name: "Fat Napz Society Ok Karen Black",
+        name: "Fat Napz Society Ok Karen Black 4",
         price: 24.99
     },
     {
         imgSrc: "/dinosnore1.webp",
         newArrival: true,
-        name: "Fat Napz Society Ok Karen Black",
+        name: "Fat Napz Society Ok Karen Black 5",
         price: 24.99
     },
 ];

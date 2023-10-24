@@ -26,7 +26,7 @@ function Navbar() {
                             <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/">HOME</Link>
                         </li>
                         <li className="font-bold text-lg h-full flex items-center text-center">
-                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/new">NEW</Link>
+                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">NEW</Link>
                         </li>
                         <li className="font-bold text-lg h-full flex items-center text-center"
                             onMouseEnter={() => setIsAboutDropdownOpen(true)}
@@ -34,7 +34,7 @@ function Navbar() {
                         >
                             <Link
                                 className="w-[60px] hover:border-b-2 hover:border-black"
-                                to="/about"
+                                to="/About"
                             >
                                 ABOUT
                             </Link>
@@ -42,10 +42,10 @@ function Navbar() {
                                 <div className="absolute top-full h-[75px] w-full left-0 bg-white shadow-md grid grid-cols-1 ">
                                     <ul>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/new">OUR STORY</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">OUR STORY</Link>
                                         </li>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/new">NEW</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">NEW</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -57,7 +57,7 @@ function Navbar() {
                         >
                             <Link
                                 className="w-[60px] hover:border-b-2 hover:border-black"
-                                to="/shop"
+                                to="/Shop"
                             >
                                 SHOP
                             </Link>
@@ -65,10 +65,10 @@ function Navbar() {
                                 <div className="absolute top-full h-[75px] w-full left-0 bg-white shadow-md grid grid-cols-1 ">
                                     <ul>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/new">MEN</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">MEN</Link>
                                         </li>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/new">WOMEN</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">WOMEN</Link>
                                         </li>
                                     </ul>
                                 </div>

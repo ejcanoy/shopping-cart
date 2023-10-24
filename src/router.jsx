@@ -14,15 +14,15 @@ const Router = () => {
       errorElement: <ErrorPage />,
     },
     {
-      path: "/new",
+      path: "/New",
       element: <New />
     },
     {
-      path: "/about",
+      path: "/About",
       element: <About />
     },
     {
-      path: "/shop",
+      path: "/Shop",
       element: <Shop />,
     },
     {

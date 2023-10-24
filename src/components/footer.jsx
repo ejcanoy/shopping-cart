@@ -58,7 +58,7 @@ function Footer() {
                     <div className="text-white text-center">
                         <h5 className="font-bold">OUR STORE</h5>
                         <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">About Us</h6>
+                            <h6 className="hover:text-[#cdaf8c] hover:underline">ABOUT US</h6>
                         </div>
                         <div>
                             <h6 className="hover:text-[#cdaf8c] hover:underline">FAQ</h6>
