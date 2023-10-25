@@ -35,7 +35,7 @@ function Navbar() {
                         >
                             <Link
                                 className="w-[60px] hover:border-b-2 hover:border-black"
-                                to="/About"
+                                to="/About/OurStory"
                             >
                                 ABOUT
                             </Link>
@@ -43,10 +43,10 @@ function Navbar() {
                                 <div className="absolute top-full h-[75px] w-full left-0 bg-white shadow-md grid grid-cols-1 ">
                                     <ul>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">OUR STORY</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/About/OurStory">OUR STORY</Link>
                                         </li>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/New">NEW</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/About/Contact">NEW</Link>
                                         </li>
                                     </ul>
                                 </div>
