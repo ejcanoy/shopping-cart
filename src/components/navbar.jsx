@@ -46,7 +46,7 @@ function Navbar() {
                                             <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/About/OurStory">OUR STORY</Link>
                                         </li>
                                         <li className="font-bold text-black">
-                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/About/Contact">NEW</Link>
+                                            <Link className="w-[60px] hover:border-b-2 hover:border-black" to="/About/Contact">CONTACT</Link>
                                         </li>
                                     </ul>
                                 </div>
