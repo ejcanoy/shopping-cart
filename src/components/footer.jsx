@@ -1,14 +1,23 @@
+import { useState } from "react";
 import { Facebook, Instagram, Youtube, } from "react-feather"
 import { Link } from "react-router-dom"
 function Footer() {
+    const [inputValue, setInputValue] = useState("");
+
+    const handleSubscribe = (e) => {
+        e.preventDefault();
+        alert("Subscribed!")
+        setInputValue("");
+    }
+
     return (
         <>
             <div className="bg-black h-[300px] grid place-items-center">
                 <div className="bg-black grid grid-cols-4 gap-5 w-[80%] mx-auto">
-                    <form className="text-white">
+                    <form onSubmit={handleSubscribe} className="text-white">
                         <h5 className="font-bold text-center mb-1">STAY IN THE LOOP</h5>
                         <div className="flex items-center space-x-1">
-                            <input type="text" className="flex-grow" placeholder="Email" />
+                            <input type="text" className="flex-grow text-black" placeholder="Email" value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
                             <button className="w-24 bg-[#cdaf8c] text-black hover:text-[#cdaf8c] hover:bg-black hover:border hover:border-1 hover:border-[#cdaf8c]">Submit</button>
                         </div>
                         <div>
