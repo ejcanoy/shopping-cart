@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Youtube, } from "react-feather"
+import { Link } from "react-router-dom"
 function Footer() {
     return (
         <>
@@ -46,19 +47,22 @@ function Footer() {
                     <div className="text-white text-center">
                         <h5 className="font-bold">SHOP</h5>
                         <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">NEW</h6>
+                            <Link to="/New">
+                                <h6 className="hover:text-[#cdaf8c] hover:underline">NEW</h6>
+                            </Link>
                         </div>
                         <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">WOMENS</h6>
-                        </div>
-                        <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">MENS</h6>
+                            <Link to="/Shop">
+                                <h6 className="hover:text-[#cdaf8c] hover:underline">ALL</h6>
+                            </Link>
                         </div>
                     </div>
                     <div className="text-white text-center">
                         <h5 className="font-bold">OUR STORE</h5>
                         <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">ABOUT US</h6>
+                            <Link to="/About/OurStory">
+                                <h6 className="hover:text-[#cdaf8c] hover:underline">ABOUT US</h6>
+                            </Link>
                         </div>
                         <div>
                             <h6 className="hover:text-[#cdaf8c] hover:underline">FAQ</h6>

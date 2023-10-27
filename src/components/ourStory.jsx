@@ -1,6 +1,9 @@
+import ScrollToTop from "../functions/scrollToTop"
+
 function OurStory() {
     return (
         <>
+        <ScrollToTop />
             <div className="sticky top-24 -z-10">
                 <div className="w-full h-4 bg-black"></div>
                 <div className="flex w-full justify-center bg-[#cdaf8c]">

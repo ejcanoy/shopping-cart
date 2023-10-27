@@ -1,12 +1,19 @@
-import newestDrop from "../data/inventory";
-import Card from "./productCard";
+import Card from "./productCard"
+import inventory from "../data/inventory"
+import { useLocation } from "react-router"
 
-function Drop() {
+function Products() {
+    const location = useLocation();
+    const pathName = location.pathname.split("/");
+    const header = pathName[pathName.length - 1].toUpperCase();
+
+
+    const newestDrop = inventory.filter((product) => product.newArrival)
     return (
         <>
             <div className="w-full h-4 bg-black"></div>
             <div className="flex w-full justify-center bg-[#cdaf8c]">
-                <h2 className="text-5xl 2xl:text-6xl bg-white w-[400px] text-center">NEWEST DROP</h2>
+                <h2 className="text-5xl 2xl:text-6xl bg-white w-[400px] pb-2 text-center">{header}</h2>
             </div>
             <div className="w-full h-4 bg-black"></div>
             <div className="w-[80%] my-10 mx-auto">
@@ -22,4 +29,4 @@ function Drop() {
     )
 }
 
-export default Drop;
+export default Products

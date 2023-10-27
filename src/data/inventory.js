@@ -12,7 +12,7 @@ function fillData() {
     return ret;
 }
 
-const newestDrop = [
+const inventory = [
     {
         imgSrc: "/okk1.webp",
         newArrival: true,
@@ -53,4 +53,4 @@ const newestDrop = [
 
 
 
-export default newestDrop
+export default inventory

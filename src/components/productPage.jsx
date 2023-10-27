@@ -6,7 +6,7 @@ import FatNapzCarousel from "./fatNapzCarousel";
 import { Carousel } from "react-responsive-carousel";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from "./styles/custom-carousel-styles.css";
-import newestDrop from "../data/newestDrop";
+import newestDrop from "../data/inventory";
 
 
 function ProductPage() {
