@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slidein: {
+          '0%': { transform: 'translateX(400px)', width: '400px', opacity: 0 },
+          '100%': { transform: 'translateX(0)', width: '400px', opacity: 1 },
+        },
+      },
+      animation: {
+        slideinRegular: 'slidein 1.5s',
+      },
       screens: {
         'xs': '0px',
         'sm': '640px',

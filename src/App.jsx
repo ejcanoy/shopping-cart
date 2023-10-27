@@ -1,18 +1,39 @@
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
+import { useState, createContext } from 'react';
+import Router from "./router";
 
-import Drop from "./components/drop"
-import FatNapzCarousel from "./components/fatNapzCarousel";
+export const ShopContext = createContext(null);
 
 const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <FatNapzCarousel />
-      <Drop />
-      <Footer />
-    </div>
-  );
+  const [cartItems, setCartItems] = useState([]);
+
+  const addToCart = (item) => {
+    setCartItems(cartItems => {
+      const index = cartItems.findIndex(obj => (
+        obj.name === item.name &&
+        obj.price === item.price &&
+        obj.selectedSize === item.selectedSize
+      ));
+
+      if (index !== -1) {
+        const updatedArray = [...cartItems];
+        updatedArray[index].value += item.value;
+        return updatedArray;
+      } else {
+        return [...cartItems, item];
+      }
+    });
+
+
+    // setCartItems([...cartItems, item]);
+  };
+
+return (
+  <div>
+    <ShopContext.Provider value={{ cartItems, addToCart, setCartItems }}>
+      <Router />
+    </ShopContext.Provider>
+  </div>
+);
 };
 
 export default App;

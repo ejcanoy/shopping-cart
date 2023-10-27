@@ -1,16 +1,23 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, User } from "react-feather";
+import { ShoppingCart } from "react-feather";
 import { useState } from "react";
+import { useContext } from 'react';
+import { ShopContext } from '../App';
+import Cart from "./cart";
 
 function Navbar() {
-    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false); 
-    const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false); 
+    const { cartItems } = useContext(ShopContext);
+
+    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+    const [isViewCartOpen, setIsViewCartOpen] = useState(false);
+    const cartCount = cartItems.reduce((acc, currentProduct) => acc + currentProduct.value, 0);
+
 
     return (
         <>
-            {(isAboutDropdownOpen || isShopDropdownOpen) && (
+            {(isAboutDropdownOpen) || isViewCartOpen && (
                 <div
-                    className="fixed inset-0 z-40 bg-black opacity-30"
+                    className="fixed inset-0 z-30 bg-black opacity-30"
                     onClick={() => setIsAboutDropdownOpen(false)}
                 ></div>
             )}
@@ -64,15 +71,23 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="min-w-[100px] h-[75px] flex justify-center items-center">
-                        <button>
-                            <User />
-                        </button>
-                        <button>
-                            <ShoppingCart />
+                        <button onClick={() => setIsViewCartOpen(true)}>
+                            {
+                                cartItems.length > 0 &&
+                                <div className="absolute rounded-full bg-black w-6 h-6 ml-5 -translate-y-2">
+                                    <span className="text-white">{cartCount}</span>
+                                </div>
+                            }
+                            <ShoppingCart size={32}></ShoppingCart>
                         </button>
                     </div>
                 </div>
             </nav>
+
+            {
+                isViewCartOpen &&
+                <Cart setIsViewCartOpen={setIsViewCartOpen} cartCount={cartCount}/>
+            }
         </>
     );
 }

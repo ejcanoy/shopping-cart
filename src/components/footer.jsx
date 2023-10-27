@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 function Footer() {
     return (
         <>
-            <div className="bg-black pt-10">
+            <div className="bg-black h-[300px] grid place-items-center">
                 <div className="bg-black grid grid-cols-4 gap-5 w-[80%] mx-auto">
                     <form className="text-white">
                         <h5 className="font-bold text-center mb-1">STAY IN THE LOOP</h5>
