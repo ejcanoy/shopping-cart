@@ -48,7 +48,7 @@ function Cart({ setIsViewCartOpen, cartCount }) {
     }
 
     const handleCheckout = () => {
-        alert(`Checkout: ${cartItems.length} products for subtotal $${subtotal.toFixed(2)} `)
+        alert(`Checkout: ${cartCount} products for subtotal $${subtotal.toFixed(2)} `)
         setIsViewCartOpen(false);
         setCartItems([]);
     }
