@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { ShopContext } from '../App';
-import "./styles/custom-number-input.css"
+// import "./styles/custom-number-input.css"
 import { X } from 'react-feather';
 
 function Cart({ setIsViewCartOpen, cartCount }) {
