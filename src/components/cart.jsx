@@ -83,7 +83,7 @@ function Cart({ setIsViewCartOpen, cartCount }) {
                                 cartItems.map((item) => (
                                     <>
                                         <div className="grid grid-cols-[1fr,2fr,0.25fr] px-1 gap-1 my-3" key={item.name}>
-                                            <div><img src={item.imgSrc} alt="" /></div>
+                                            <div><img src={item.imgSrc[0]} alt="" /></div>
                                             <div>
                                                 <h5 className="font-bold text-md">{item.name}</h5>
                                                 <div className="text-xs">
