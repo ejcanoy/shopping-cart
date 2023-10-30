@@ -5,7 +5,7 @@ import About from "./components/about";
 import New from "./components/new";
 import ProductPage from "./components/productPage";
 import OurStory from "./components/ourStory";
-import Contact from "./components/Contact";
+import Contact from "./components/contact";
 import Home from "./components/home";
 
 const Router = () => {
