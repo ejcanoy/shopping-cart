@@ -40,7 +40,9 @@ function Contact() {
                     </div>
                     <label htmlFor="">Message</label>
                     <div><textarea className="border-black border-2 w-full bg-[#cdaf8c]" name="" id="" cols="30" rows="10"></textarea></div>
+                    <button className="border-black border-2 p-2 w-32 text-[#cdaf8c] bg-black ease-in-out delay-150 duration-150 hover:bg-[#cdaf8c] hover:text-black">Submit</button>
                 </form>
+
             </div>
         </>
     )

@@ -20,7 +20,7 @@ function Products() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-center">
                     {
                         newestDrop.map((product) => (
-                            <Card key={product.name} imgSrc={product.imgSrc} name={product.name} price={product.price} newArrival={product.newArrival} />
+                            <Card key={product.name} imgSrc={product.imgSrc[0]} name={product.name} price={product.price} newArrival={product.newArrival} />
                         ))
                     }
                 </div>

@@ -23,23 +23,27 @@ function ProductPage() {
     let price;
     let prevPage;
     let prevPageName
+    let description
 
-    if (productData) {
-        imgSrc = productData.imgSrc;
-        name = productData.name;
-        price = productData.price;
-        prevPage = productData.prevPage;
-        prevPageName = prevPage === "/" ? "Home" : productData.prevPage.split('/')[1];
-    } else {
-        const decodedString = decodeURIComponent(curPathName);
-        const productName = decodedString.split("/")[2];
-        const curProduct = newestDrop.filter(product => product.name === productName)[0];
-        imgSrc = curProduct.imgSrc;
-        name = curProduct.name;
-        price = curProduct.price;
-        prevPage = curProduct.prevPage;
+    // if (productData) {
+    //     imgSrc = productData.imgSrc;
+    //     name = productData.name;
+    //     price = productData.price;
+    //     prevPage = productData.prevPage;
+    //     prevPageName = prevPage === "/" ? "Home" : productData.prevPage.split('/')[1];
+    // } else {
+    const decodedString = decodeURIComponent(curPathName);
+    const productName = decodedString.split("/")[2];
+    const curProduct = newestDrop.filter(product => product.name === productName)[0];
+    imgSrc = curProduct.imgSrc;
+    name = curProduct.name;
+    price = curProduct.price;
+    prevPage = curProduct.prevPage;
+    description = curProduct.description;
 
-    }
+    // }
+    console.log(imgSrc)
+
 
     const [value, setValue] = useState(1);
 
@@ -57,10 +61,10 @@ function ProductPage() {
         setValue(newValue);
     };
 
-    const [selectedSize, setSelectedSize] = useState('Small'); 
+    const [selectedSize, setSelectedSize] = useState('Small');
 
     const handleSizeChange = (event) => {
-      setSelectedSize(event.target.value);
+        setSelectedSize(event.target.value);
     };
 
     const handleSubmit = (e) => {
@@ -79,15 +83,13 @@ function ProductPage() {
                     <div className="grid grid-cols-2 gap-10">
                         <div className="product-page">
                             <Carousel showStatus={false} showThumbs={true}>
-                                <div>
-                                    <img src={imgSrc} alt="Image 1" />
-                                </div>
-                                <div>
-                                    <img src="/okk1.webp" alt="Image 2" />
-                                </div>
-                                <div>
-                                    <img src="/okk1.webp" alt="Image 3" />
-                                </div>
+                                {
+                                    imgSrc.map((img, index) => (
+                                        <div key={img + index}>
+                                            <img src={img} alt={`Image ${index + 1}`} />
+                                        </div>
+                                    ))
+                                }
                             </Carousel>
                         </div>
                         <div>
@@ -106,7 +108,7 @@ function ProductPage() {
                                             name=""
                                             id="size"
                                             value={selectedSize}
-                                            onChange={handleSizeChange} 
+                                            onChange={handleSizeChange}
                                         >
                                             <option value="Small">Small</option>
                                             <option value="Medium">Medium</option>
@@ -134,8 +136,7 @@ function ProductPage() {
                             </form>
                             <div className="pt-10">
                                 <p className="pb-5 xl:w-3/4 2xl:w-3/4">
-                                    The Fat Napz Society Fall Collection has finally arrived! How many Karen's do you deal with
-                                    on a daily basis? High quality heavy weight shirt with prints on shoulder, chest, and back.
+                                    {description}
                                 </p>
 
 
