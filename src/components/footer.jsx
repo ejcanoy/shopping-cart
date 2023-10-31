@@ -12,12 +12,12 @@ function Footer() {
 
     return (
         <>
-            <div className="bg-black h-[300px] grid place-items-center">
-                <div className="bg-black grid grid-cols-4 gap-5 w-[80%] mx-auto">
+            <div className="bg-black md:h-[300px] sm:h-[410px] xs:h-[410px] grid place-items-center">
+                <div className="bg-black grid md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-2 gap-5 w-[80%] mx-auto">
                     <form onSubmit={handleSubscribe} className="text-white">
                         <h5 className="font-bold text-center mb-1">STAY IN THE LOOP</h5>
-                        <div className="flex items-center space-x-1">
-                            <input type="text" className="flex-grow text-black" placeholder="Email" value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
+                        <div className="flex md:justify-center space-x-1">
+                            <input type="text" className="sm:w-[150px] xs:w-[75px] text-black" placeholder="Email" value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
                             <button className="w-24 bg-[#cdaf8c] text-black hover:text-[#cdaf8c] hover:bg-black hover:border hover:border-1 hover:border-[#cdaf8c]">Submit</button>
                         </div>
                         <div>
