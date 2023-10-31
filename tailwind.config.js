@@ -7,13 +7,18 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        slidein: {
+        slideinRight: {
           '0%': { transform: 'translateX(400px)', width: '400px', opacity: 0 },
           '100%': { transform: 'translateX(0)', width: '400px', opacity: 1 },
         },
+        slideinLeft: {
+          '0%': { transform: 'translateX(-100vw)', width: '100vw', opacity: 1 },
+          '100%': { transform: 'translateX(0)', width: '100vw', opacity: 1 },
+        }
       },
       animation: {
-        slideinRegular: 'slidein 1.5s',
+        slideinRegular: 'slideinRight 1.5s',
+        slideinOpposite: 'slideinLeft 1.5s'
       },
       screens: {
         'xs': '0px',
