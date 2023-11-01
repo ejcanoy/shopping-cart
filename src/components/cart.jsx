@@ -1,6 +1,6 @@
+import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { ShopContext } from '../App';
-// import "./styles/custom-number-input.css"
 import { X } from 'react-feather';
 
 function Cart({ setIsViewCartOpen, cartCount }) {
@@ -148,4 +148,10 @@ function Cart({ setIsViewCartOpen, cartCount }) {
     )
 }
 
+Cart.propTypes = {
+    setIsViewCartOpen: PropTypes.func,
+    cartCount: PropTypes.number,
+};
+
 export default Cart
+

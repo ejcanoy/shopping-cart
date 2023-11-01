@@ -16,7 +16,6 @@ function ProductPage() {
 
     const location = useLocation();
     const curPathName = location.pathname;
-    const productData = location.state;
 
     let imgSrc;
     let name;
@@ -34,20 +33,16 @@ function ProductPage() {
     prevPage = curProduct.prevPage;
     description = curProduct.description;
 
-    // }
-    console.log(imgSrc)
 
 
     const [value, setValue] = useState(1);
 
     const handleChange = (event) => {
         let newValue = parseInt(event.target.value, 10);
-
-        // Use regular expression to check if inputValue is a valid number
         if (/^\d+$/.test(newValue)) {
           setValue(Number(newValue));
         } else {
-          setValue(5); // Default to 5 if the input is not a valid number
+          setValue(5); 
         }
     
 

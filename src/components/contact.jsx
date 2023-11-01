@@ -24,18 +24,18 @@ function Contact() {
             </div>
             <div className="flex justify-center my-10">
                 <form className="w-[80%] bg-[#cdaf8c] p-5  border-black border-2" action="">
-                    <div className="grid grid-cols-3">
+                    <div className="grid grid-cols-3 gap-2">
                         <div>
                             <div><label htmlFor="">First Name</label></div>
-                            <div><input className="border-black border-2 bg-[#cdaf8c]" type="text" /></div>
+                            <div><input className="border-black border-2 bg-[#cdaf8c] w-full" type="text" /></div>
                         </div>
                         <div>
                             <div><label htmlFor="">Last Name</label></div>
-                            <div><input className="border-black border-2 bg-[#cdaf8c]" type="text" /></div>
+                            <div><input className="border-black border-2 bg-[#cdaf8c] w-full" type="text" /></div>
                         </div>
                         <div>
                             <div><label htmlFor="">Email</label></div>
-                            <div><input className="border-black border-2 bg-[#cdaf8c]" type="text" /></div>
+                            <div><input className="border-black border-2 bg-[#cdaf8c] w-full" type="text" /></div>
                         </div>
                     </div>
                     <label htmlFor="">Message</label>

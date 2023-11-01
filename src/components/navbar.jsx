@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Menu, ShoppingCart, X, ChevronDown } from "react-feather";
 import { useState } from "react";
 import { useContext } from 'react';
@@ -6,7 +6,6 @@ import { ShopContext } from '../App';
 import Cart from "./cart";
 
 function Navbar() {
-    const history = useNavigate();
     const { cartItems } = useContext(ShopContext);
 
     const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);

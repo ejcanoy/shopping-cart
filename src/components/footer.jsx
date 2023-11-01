@@ -73,9 +73,6 @@ function Footer() {
                                 <h6 className="hover:text-[#cdaf8c] hover:underline">ABOUT US</h6>
                             </Link>
                         </div>
-                        {/* <div>
-                            <h6 className="hover:text-[#cdaf8c] hover:underline">FAQ</h6>
-                        </div> */}
                     </div>
                     <div></div>
                 </div>
