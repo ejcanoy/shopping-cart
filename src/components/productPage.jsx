@@ -43,13 +43,13 @@ function ProductPage() {
     const handleChange = (event) => {
         let newValue = parseInt(event.target.value, 10);
 
-        if (isNaN(newValue)) {
-            newValue = 1;
-        } else if (newValue < 1) {
-            newValue = 1;
-        } else if (newValue > 5) {
-            newValue = 5;
+        // Use regular expression to check if inputValue is a valid number
+        if (/^\d+$/.test(newValue)) {
+          setValue(Number(newValue));
+        } else {
+          setValue(5); // Default to 5 if the input is not a valid number
         }
+    
 
         setValue(newValue);
     };
