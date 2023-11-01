@@ -14,7 +14,7 @@ function OurStory() {
             </div>
 
             <div className="w-full h-screen flex items-center flex-col bg-black -z-10 fixed">
-                <div className="w-100% h-[500px]"><img className="h-[300px] mt-10" src="/aboutus.jpeg" alt="" /></div>
+                <div className="w-100% h-[500px]"><img className="h-[300px] mt-10 object-cover" src="/aboutus.jpeg" alt="" /></div>
             </div>
             <div className="w-full z-20">
                 <div className="h-[500px]"></div>

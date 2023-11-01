@@ -20,7 +20,7 @@ function Footer() {
                             <input type="text" className="sm:w-[150px] xs:w-[75px] text-black" placeholder="Email" value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
                             <button className="w-24 bg-[#cdaf8c] text-black hover:text-[#cdaf8c] hover:bg-black hover:border hover:border-1 hover:border-[#cdaf8c]">Submit</button>
                         </div>
-                        <div>
+                        <div className="flex justify-center">
                             <span className="text-xs">By clicking submit I accept all marketing emails.</span>
                         </div>
                     </form>

@@ -1,12 +1,13 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom'
+import "./styles/custom-fatnapz-styles.css"
 
 function FatNapzCarousel() {
 
     return (
         <>
-            <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false} infiniteLoop={false}>
+            <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
                 <div>
                     <img src="/cover1152x540.webp" />
                     <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 xl:-translate-y-[400%] 2xl:-translate-y-[800%]  w-11/12 p-2">

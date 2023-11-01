@@ -1,19 +1,29 @@
-.product-page .thumbs {
-  display: flex;
-  flex-direction: column;
-  animation: none;
+@media (min-width: 1024px) {
+  .product-page .thumbs {
+    display: flex;
+    flex-direction: column;
+    animation: none;
+  }
+  
+  .product-page .carousel-root {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr ;
+  }
+  
+  .product-page .carousel-slider {
+    order: 1;
+  }
+  
+  .product-page ul.thumbs.animated {
+    transform: translate3d(0px, 0px, 0px) !important; 
+    transition-duration: 350ms; 
+  }
 }
 
-.product-page .carousel-root {
-  display: grid;
-  grid-template-columns: 0.25fr 1fr ;
+
+@media (max-width: 1023px) {
+  .carousel .thumbs {
+    display: none;
+  }
 }
 
-.product-page .carousel-slider {
-  order: 1;
-}
-
-.product-page ul.thumbs.animated {
-  transform: translate3d(0px, 0px, 0px) !important; /* Use !important to ensure it takes precedence over inline styles */
-  transition-duration: 350ms; /* Set any other styles you want to overwrite */
-}

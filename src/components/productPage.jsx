@@ -25,13 +25,6 @@ function ProductPage() {
     let prevPageName
     let description
 
-    // if (productData) {
-    //     imgSrc = productData.imgSrc;
-    //     name = productData.name;
-    //     price = productData.price;
-    //     prevPage = productData.prevPage;
-    //     prevPageName = prevPage === "/" ? "Home" : productData.prevPage.split('/')[1];
-    // } else {
     const decodedString = decodeURIComponent(curPathName);
     const productName = decodedString.split("/")[2];
     const curProduct = newestDrop.filter(product => product.name === productName)[0];
@@ -80,7 +73,7 @@ function ProductPage() {
                     <div>
                         <h6><Link className="font-semibold pl-5" to={prevPage}>{prevPageName} </Link>/ {name}</h6>
                     </div>
-                    <div className="grid grid-cols-2 gap-10">
+                    <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-10">
                         <div className="product-page">
                             <Carousel showStatus={false} showThumbs={true}>
                                 {
