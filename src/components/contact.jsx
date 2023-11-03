@@ -22,7 +22,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-10">
+            <div className="flex justify-center my-10 min-h-[50vh]">
                 <form className="w-[80%] bg-[#cdaf8c] p-5  border-black border-2" action="">
                     <div className="grid grid-cols-3 gap-2">
                         <div>
